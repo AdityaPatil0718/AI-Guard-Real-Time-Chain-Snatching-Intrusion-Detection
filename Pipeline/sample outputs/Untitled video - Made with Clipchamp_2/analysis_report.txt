@@ -1,0 +1,15 @@
+=== Analysis Report ===
+
+Date and Time: 11:04 AM IST on Tuesday, May 27, 2025
+
+Question 1: Is there any suspicious or theft-related activity in this image?
+Gemini Response 1:
+Yes.  The image shows a person on a motorcycle snatching a purse from a woman on the street.
+
+-----
+
+Question 2: Describe the person performing it — clothing color (upper and lower), helmet/headgear, etc
+Gemini Response 2:
+Yes.
+
+The person snatching the purse is wearing a dark-colored (possibly dark brown or gray) jacket as an upper garment and dark jeans as lower.  They are wearing a black and red motorcycle helmet.

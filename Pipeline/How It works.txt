@@ -1,0 +1,88 @@
+📄 Project: Activity Detection and Frame Analysis Pipeline
+This pipeline processes an input video to detect activities (e.g., snatching, climbing), identifies the frame with the highest confidence for the detected activity, and then performs face detection and description analysis using Google's Gemini API.
+
+✅ Pipeline Overview (main_pipeline.py)
+The following steps summarize what the script does:
+
+Load Input Video:
+
+Specify the path to the input video in the script.
+
+Activity Detection:
+
+The script uses the YOLOv8 model (via the ultralytics library) to detect activities in the video.
+
+It identifies and saves:
+
+The frame with the highest confidence.
+
+The previous frame.
+
+The next frame.
+
+Face Detection and Cropping:
+
+Uses the FaceTorsoExtractor class from the main_face.py module.
+
+This extracts and crops the face (or torso) region from the best frame.
+
+Description Analysis via Gemini API:
+
+Uses the GeminiAPI class from the gemini_api.py module.
+
+The best frame is uploaded to Gemini for detailed analysis.
+
+Requires a valid Gemini API key to be set.
+
+⚙️ Setup Instructions
+Clone or Download the Project Files:
+
+Ensure the following files are present in the same directory:
+
+main_pipeline.py
+
+main_face.py
+
+gemini_api.py
+
+Install Required Dependencies:
+
+torch
+facenet-pytorch
+Pillow
+opencv-python
+ultralytics
+google-generativeai
+gemini-api
+
+Update API Key:
+
+Open gemini_api.py.
+
+Replace the placeholder with your Gemini API key, e.g.:
+
+api_key = "your_gemini_api_key_here"
+
+Specify Input Video Path:
+
+In main_pipeline.py, set the path to your input video file:
+
+video_path = "path/to/your/input_video.mp4"
+
+📂 File Descriptions
+main_pipeline.py: The main driver script for the entire pipeline.
+
+main_face.py: Contains the FaceTorsoExtractor class for face/torso detection and cropping.
+
+gemini_api.py: Contains the GeminiAPI class used to send frames to Gemini and get descriptive analysis.
+
+📝 Output
+The pipeline generates:
+
+The best frame (highest confidence).
+
+The previous and next frames around the best frame.
+
+A cropped image of the face or torso.
+
+A textual description from Gemini API based on the best frame.

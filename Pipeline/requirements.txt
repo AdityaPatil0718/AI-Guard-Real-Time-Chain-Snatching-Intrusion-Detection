@@ -1,0 +1,7 @@
+torch
+facenet-pytorch
+Pillow
+opencv-python
+ultralytics
+google-generativeai
+gemini-api
