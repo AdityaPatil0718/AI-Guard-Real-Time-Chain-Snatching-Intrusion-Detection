@@ -98,15 +98,15 @@ dataset/
 ### data.yaml Example
 
 ```yaml
-train: dataset/train/images
-val: dataset/val/images
-test: dataset/test/images
+train: ../train/images
+val: ../valid/images
+test: ../test/images
 
 kpt_shape: [24, 3]
+flip_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
+
 nc: 2
-names:
-  - climbing
-  - snatching
+names: ['climbing', 'snatching']
 ```
 
 ---
