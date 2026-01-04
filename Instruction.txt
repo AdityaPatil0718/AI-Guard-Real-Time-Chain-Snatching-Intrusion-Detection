@@ -1,0 +1,32 @@
+Images 4050
+- normal_walk 1016
+- climbing 957
+- snatching 915
+- background 1130
+
+
+Libraries
+- ultralytics (latest version)
+- OpenCV   (latest version)
+
+
+Instructions to Run YOLOv8 Pose Model
+
+1. Check Ultralytics Installation:
+   - Run: pip show ultralytics. If not installed: pip install ultralytics.
+
+2. Verify Model and Video Paths:
+   - Check model file in Model/pose/yolov8n_pose_custom4: ls weights/best.pt (Windows: dir weights\best.pt).
+   - Confirm video file: ls /path/to/your/input_video.mp4 (Windows: dir \path\to\your\input_video.mp4). Update script with correct paths.
+
+3. Set Device to CPU if No GPU:
+   - Check GPU: python, then import torch; print(torch.cuda.is_available()). If False, set device="cpu" in script's predict method.
+
+4. Adjust Confidence Level:
+   - Set confidence to 0.6 in script for CPU balance. Use 0.25 for more detections, 0.75 for stricter ones.
+
+5. Run Model and Check Output:
+   - Run script with model path weights/best.pt, video path, device="cpu" (if no GPU), and confidence level.
+   - Output saves in runs/pose/predict (or predict2, etc.). Check latest folder.
+
+Note: Replace path/to/your/input_video.mp4 with actual video path in script.
