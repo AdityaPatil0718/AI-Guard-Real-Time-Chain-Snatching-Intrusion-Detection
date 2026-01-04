@@ -1,7 +1,4 @@
-# 🚨 theft_prevention_anomaly_detection_ai
-
-AI-based Theft Prevention & Anomaly Detection  
-**Intern:** Aditya Patil | **Mentor:** Gautami
+# 🚨 AI-Guard-Real-Time-Chain-Snatching-Intrusion-Detection
 
 ---
 
@@ -254,71 +251,6 @@ python main_pipeline.py
 - **Gemini-generated frame description**
 
 ---
-
-# Git
-
-## Setup and Configuration
-
-### Find the version of Windows OS
-Enter `dxdiag` in Windows search
-Open `dxdiag`
-![Image](https://github.com/user-attachments/assets/66acedd8-a118-4bed-8d98-580a90d2d9c1)
-
-### Visit offical page of Git and download Git for the specific version (32bit/64bit)
-![Download](https://git-scm.com/downloads/win)
-
-### Install
-Double click on the installler and grant permission
-Keep pressing `Next` until installation is finished
-
-### Add GITHUB TOKEN to system environment
-Search `Edit system environ`
-Click `Environment Variables` in bottom right
-![Image](https://github.com/user-attachments/assets/23dc1c06-0878-4fed-bf49-35cddc10fe2c)
-Add a new Environment Variable under `System Variables`
-![Image](https://github.com/user-attachments/assets/0694a395-b1a6-4d70-8b22-72446b63a765)
-Enter `Variable name` as `GITHUB_AUTH`
-Paste GITHUB_TOKEN shared with you in the `Variable value` field
-![Image](https://github.com/user-attachments/assets/5469ac55-3093-4a39-921c-af2dd3cc3fa6)
-Click OK and Apply
-
-## Git Commands Reference
-
-This document provides a quick reference for commonly used Git commands.
-
-| Command | Description |
-|---------|-------------|
-| `git clone <url>` | Clones a remote Git repository to your local machine. |
-| `git clone <url> --branch <branch>` | Clones a specific branch from the remote repository. |
-| `git fetch && git merge` | Fetches updates from the remote repository and merges them into the current branch. |
-| `git pull origin` | Fetches and merges the latest changes from the remote repository’s default branch. |
-| `git checkout -b <branch_name>` | Creates a new branch and switches to it. |
-| `git add .` | Stages all modified and new files for commit. |
-| `git commit -m "Your commit message"` | Commits the staged changes with a descriptive message. |
-| `git push -u origin <branch_name>` | Pushes the specified branch to the remote repository and sets up tracking. |
-| `git reset <filename>` | Unstages a file that was added using `git add`, keeping its changes. |
-| `git push --force origin <last good commit hash>:<branch>` | Forcefully pushes the branch to undo changes in the remote repository up to a specified commit. |
-| `git rm --cached -r .` | Removes files from the staging area without deleting them from the working directory. |
-| `git branch -D <local-branch>` | Deletes a local branch forcefully. |
-| `git remote -v` | Displays the remote repositories linked to your local repository. |
-| `git remote set-url origin <url>` | Updates the remote repository URL. |
-| `git ls-files` | Lists all files tracked by Git. |
-| `git submodule sync` | Synchronizes submodules with the latest changes. |
-| `git submodule update --init` | Initializes and updates submodules. |
-| `git config --global user.email "intern1@sunfibo.com"` | Sets the global email for Git commits. |
-| `git config --global user.name "FirstName LastName"` | Sets the global username for Git commits. |
-
-## Notes
-- Use `git status` to check the current state of your repository.
-- Use `git log --oneline --graph` to view a simplified commit history.
-- Always pull the latest changes before making updates to avoid conflicts.
-
-## Crash course on Git
-	[Learn Git – Full Course for Beginners](https://youtu.be/zTjRZNkhiEU?si=tpzBRp5tlJqwclQh)
-
-# JIRA
-	Software project tracking and management
-	[JIRA CRASH COURSE](https://youtu.be/iryX1Oa1cMQ?si=SjR5MgRiPkKVrmXu)
 
 # ⚠ Warning
 	Daily updates on Github and JIRA are mandatory.
